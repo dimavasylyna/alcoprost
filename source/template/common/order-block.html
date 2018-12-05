@@ -1,0 +1,31 @@
+<section class="order-block">
+	<div class="container">
+		<div class="form flex">
+			<div class="discount flex">
+   				<span class="discount__value">-50</span>
+   				<span class="discount__percent">%</span>
+   			</div>
+   			<div class="price flex">
+   				<p class="price__old">Старая цена 
+   					<span class="price__value">
+   						<span class="x_price_previous">990</span><span class="x_currency">руб</span>.
+   					</span>
+   				</p>
+				<p class="price__new">Новая цена 
+					<span class="price__value">
+						<span class="x_price_current mark">499</span><span class="x_currency">руб</span>.<span class="price__star">*</span>
+					</span>
+				</p>
+   			</div>
+   			<form action="/submit" method="post" class="x_order_form flex">
+   				<label class="form__name">
+   					<input type="text" name="name" required="" autocomplete="name" placeholder="Моё имя">
+   				</label>
+				<label class="form__tel">
+					<input type="tel" name="phone" required="" autocomplete="tel" placeholder="Мой телефон">
+				</label>
+				<button type="submit" class="btn">Заказать <span>со скидкой</span></button>
+   			</form>
+		</div>
+	</div>
+</section>

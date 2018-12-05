@@ -1,0 +1,173 @@
+.order-block {
+	padding-bottom: 100px;
+	padding-top: 100px;
+
+	& .form {
+		min-height: 148px;
+		width: 100%;
+		padding-left: 60px;
+		padding-right: 54px;
+		flex-wrap: wrap;
+	}
+
+	& .form::before,
+	& .form::after {
+		display: none;
+	}
+
+	& .discount {
+		position: static;
+		transform: none;
+	}
+
+	& .price {
+		margin-top: 0;
+		max-width: 220px;
+		margin-right: auto;
+		margin-left: 24px;
+		padding-left: 0;
+	}
+
+	& .price__new {
+		width: 42%;
+	}
+
+	& form {
+		margin-right: auto;
+    	margin-left: 34px;
+	}
+
+	& input {
+		margin: 0;
+		max-width: 260px;
+	}
+
+	& .form__tel {
+		margin: 0;
+		max-width: none;
+		margin-right: 31px;
+	}
+	& .form__name {
+		margin: 0;
+		max-width: none;
+		margin-right: 20px;
+	}
+
+	& .btn {
+		max-width: 220px;
+		position: relative;
+		top: -3px;
+	}
+}
+
+
+@media screen and (max-width: 1199px){
+	.order-block {
+		padding-bottom: 60;
+		padding-top: 60px;
+
+		& .form {
+			padding-left: 26px;
+			padding-right: 10px;
+		}
+
+		& .price {
+			max-width: 194px;
+			margin-left: 13px;
+		}
+
+		& .price__new {
+			width: 46%;
+		}
+
+
+		& form {
+			margin-left: 10px;
+			
+		}
+		& .form__tel {
+			
+			margin-right: 14px;
+		}
+		& .form__name {
+			
+			margin-right: 10px;
+		}
+
+		& .btn {
+			max-width: 200px;
+			
+		}
+	}
+}
+
+
+@media screen and (max-width: 1023px){
+	.order-block {
+		padding-bottom: 40px;
+		padding-top: 40px;
+
+		& .form {
+			justify-content: center;
+		}
+
+		& .price {
+			margin-left: 10px;
+			margin-right: 0;
+		}
+
+		& form {
+			margin-top: 10px;
+		}
+	}
+}
+
+
+@media screen and (max-width: 767px){
+	.order-block {
+		padding-bottom: 30px;
+		padding-top: 30px;
+
+		& .form {
+			padding: 26px;
+		}
+
+		& form {
+			flex-wrap: wrap;
+			justify-content: space-between;
+			margin-top: 0;
+		}
+
+		& .btn {
+			width: 55%;
+			max-width: none;
+			min-width: 260px;
+			margin: auto;
+			margin-top: 10px;
+
+		}
+
+		& .form__name {
+			margin: auto;
+			margin-top: 10px;
+		}
+
+		& .form__tel {
+			
+			margin: auto;
+			margin-top: 10px;
+		}
+	}
+}
+
+
+
+
+@media screen and (max-width: 479px){
+	.order-block {
+		padding-bottom: 25px;
+		padding-top: 25px;
+
+
+	}
+}

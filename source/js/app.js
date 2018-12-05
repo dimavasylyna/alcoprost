@@ -1,3 +1,82 @@
+// Doctor - tabs
+
+$(function() {
+    
+    var docItem = $('.doctor__item');
+    var docTab = $('.doctor__tab');
+    var delClass = function() {
+         docItem.removeClass('show');
+        docTab.removeClass('active');
+    }
+
+    $('.doctor__tab-doc').on('click', function() {
+        delClass();
+        $(this).addClass('active');
+        $('.doctor__item-doc').addClass('show');
+    });
+
+    $('.doctor__tab-clinic').on('click', function() {
+        delClass();
+        $(this).addClass('active');
+        $('.doctor__item-clinic').addClass('show');
+    });
+
+    $('.doctor__tab-dev').on('click', function() {
+        delClass();
+        $(this).addClass('active');
+        $('.doctor__item-dev').addClass('show');
+    });
+});
+
+
+
+
+$(function() {
+     $(".scroll-1").niceScroll({
+          cursorcolor:"#fcb01b",
+          cursorwidth: "8px",
+          cursorfixedheight: 122,
+          cursoropacitymin: 1,
+          cursorborderradius: "2px",
+          
+          
+          oneaxismousemode: false,
+          
+          nativeparentscrolling: true
+
+    });
+     
+     $(".scroll-2").niceScroll({
+          cursorcolor:"#fcb01b",
+          cursorwidth: "8px",
+          cursorfixedheight: 122,
+          cursoropacitymin: 1,
+          cursorborderradius: "2px",
+          
+          
+          oneaxismousemode: false,
+          
+          nativeparentscrolling: true
+
+    });
+});
+
+
+       
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
 document.addEventListener("DOMContentLoaded", function() {
 
     // Вивід дати (+ час).
