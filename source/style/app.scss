@@ -58,16 +58,17 @@ input::-ms-clear {
   font-weight: 900;
   text-align: center;
 }
-.text__green {
+$black: #010101;
+$green: #75ae1b;
+$gray: #444;
+
+/*.text__green {
   color: #75ae1b;
-}
-.text__red {
-  color: #9b3020;
 }
 
 .text__gray {
   color: #444;
-}
+}*/
 
 .one-word {
   white-space: nowrap;

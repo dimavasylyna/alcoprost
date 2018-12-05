@@ -1,0 +1,290 @@
+.addictive {
+  display: block;
+  width: 100%;
+  background: center top url("../img/addictive-bg.png") no-repeat, #fffdec;
+
+  &__banner {
+    display: block;
+    max-width: 1090px;
+    margin: 0 auto;
+    padding-top: 90px;
+    color: $black;
+  }
+  &__statistic {
+    display: block;
+    max-width: 678px;
+    margin: 0 auto;
+    padding: 14px 0 55px;
+    font-size: 22px;
+    line-height: 24px;
+    font-weight: 500;
+    color: $black;
+    span {
+      color: #7e7e7e;
+    }
+  }
+  &__items-container {
+    display: flex;
+    max-width: 1170px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    text-align: center;
+    counter-reset: section;
+    margin-bottom: 115px;
+    &:after {
+      display: block;
+      position: absolute;
+      width: 2560px;
+      height: 11px;
+      content: "";
+      background: center top url(../img/addictive-arrow-down.png) no-repeat;
+      margin-top: 600px;
+      margin-left: calc(580px - 1280px);
+      z-index: 2;
+    }
+  }
+
+  &__item {
+    display: block;
+    position: relative;
+    z-index: 2;
+    max-width: 300px;
+
+  }
+  &__items-container .addictive__item:nth-child(2) {
+    max-width: 320px;
+  }
+  &__items-container .addictive__item:nth-child(3) {
+    max-width: 330px;
+  }
+  &__number-frame {
+    display: block;
+    margin: 0 auto 15px;
+    width: 66px;
+    height: 66px;
+    background-color: rgba(232, 213, 0, 0.322);
+    border-radius: 50%;
+    padding: 5px;
+  }
+  &__number {
+    display: block;
+    width: 55px;
+    height: 55px;
+    padding-top: 9px;
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 38px;
+    color: $black;
+    border-radius: 50%;
+    background-color: #e8d500;
+
+    &:before {
+      counter-increment: section;
+      content: counter(section);
+    }
+  }
+  &__item-bg {
+    display: block;
+    max-width: 300px;
+    min-height: 200px;
+    //position: relative; /*_________??? may by in &__item_________*/
+    z-index: 2;
+    &.-toxic {
+      background: center center url("../img/addictive-item1-bg.png") no-repeat,
+      center center url("../img/addictive-item1.png") no-repeat;
+      margin-bottom: 85px;
+      &:before {
+        display: block;
+        position: absolute;
+        width: 318px;
+        height: 166px;
+        content: "";
+        background: url("../img/addictive-arrow-type1.png") no-repeat;
+        z-index: -1;
+        margin-top: -92px;
+        margin-left: 15px;
+      }
+      &:after {
+        display: block;
+        position: absolute;
+        width: 318px;
+        height: 166px;
+        content: "";
+        background: url("../img/addictive-arrow-type2.png") no-repeat;
+        z-index: -1;
+        margin-top: 184px;
+        margin-left: 29px;
+      }
+    }
+    &.-mind {
+      background: center 40px url("../img/addictive-item2-bg.png") no-repeat,
+      center center url("../img/addictive-item2.png") no-repeat;
+      margin: 30px 0;
+      &:before {
+        display: block;
+        position: absolute;
+        width: 318px;
+        height: 166px;
+        content: "";
+        background: url("../img/addictive-arrow-type4.png") no-repeat;
+        z-index: -1;
+        margin-top: -40px;
+        margin-left: 27px;
+      }
+      &:after {
+        display: block;
+        position: absolute;
+        width: 318px;
+        height: 166px;
+        content: "";
+        background: url("../img/addictive-arrow-type3.png") no-repeat;
+        z-index: -1;
+        margin-top: 122px;
+        margin-left: -26px;
+      }
+    }
+    &.-health {
+      background: center 31px url("../img/addictive-item3-bg.png") no-repeat,
+      center center url("../img/addictive-item3.png") no-repeat;
+      margin-bottom: 85px;
+      &:before {
+        display: block;
+        position: absolute;
+        width: 318px;
+        height: 166px;
+        content: "";
+        background: url("../img/addictive-arrow-type2.png") no-repeat;
+        z-index: -1;
+        transform: rotate(180deg);
+        margin-top: -158px;
+        margin-left: -46px;
+      }
+      &:after {
+        display: block;
+        position: absolute;
+        width: 318px;
+        height: 166px;
+        content: "";
+        background: url("../img/addictive-arrow-type1.png") no-repeat;
+        z-index: -1;
+        transform: rotate(180deg);
+        margin-top: 98px;
+        margin-left: -55px;
+      }
+    }
+
+    img {
+      display: block;
+      width: 70px;
+      height: 70px;
+    }
+  }
+  &__item-description {
+    color: #444444;
+    font-size: 18px;
+    line-height: 28px;
+  }
+  &__bold-text {
+    font-weight: 500;
+    line-height: 24px;
+    span {
+      white-space: nowrap;
+    }
+  }
+  /*__________________________________HELP__________*/
+  &__help-banner {
+    padding-bottom: 33px;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 28px;
+    color: $black;
+    text-align: center;
+    span {
+      text-transform: capitalize;
+    }
+  }
+  &__advices-container {
+    display: flex;
+    margin: 0 auto;
+    padding-bottom: 83px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    counter-reset: section;
+  }
+  &__advice {
+    display: inline-block;
+    max-width: 366px;
+    text-align: left;
+    padding-left: 105px;
+    &:before {
+      display: block;
+      position: absolute;
+      margin-left: -105px;
+      border-radius: 50%;
+      text-align: center;
+      width: 70px;
+      height: 70px;
+      content: "";
+      color: #ffffff;
+      font-size: 40px;
+      font-weight: 900;
+      line-height: 70px;
+      border: 5px solid #faf4b0;
+      background-color: #e8d600;
+      counter-increment: section;
+      content: counter(section);
+    }
+    &.-orange:before {
+      border: 5px solid #fff5e2;
+      background-color: #fda600;
+    }
+    &.-green:before {
+      border: 5px solid #e7f4d3;
+      background-color: #75ae1b;
+    }
+  }
+  &__advice-info {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 31px;
+    color: $gray;
+    span {
+      color: #010101;
+      font-size: 20px;
+      font-weight: 500;
+      padding-bottom: 5px;
+    }
+  }
+}
+
+/*
+.arrow-down {
+  display: block;
+  width: 20px;
+  height: 20px;
+  position: relative;
+  //margin-left: 48%;
+  margin-top: -106px;
+  &:before {
+    display: block;
+    position: absolute;
+    content: "";
+    margin-left: 48%;
+    background-color: purple;
+    width: 10px;
+    height: 10px;
+    border-right: 4px solid #bcbcbc;
+    border-bottom: 4px solid #bcbcbc;
+
+    transform: rotate(45deg);
+  }
+  &:after {
+    display: block;
+    position: absolute;
+    width: 2560px;
+    height: 2px;
+    content: "";
+    background-color: #bcbcbc;
+    //transform: rotate(-45deg);
+  }
+}*/
