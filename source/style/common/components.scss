@@ -1,5 +1,5 @@
 .components {
-	padding-bottom: 101px;
+	padding-bottom: 98px;
 	padding-top: 88px;
 	background-image: url(../img/section-bg.jpg);
 
@@ -276,4 +276,16 @@
 		}
 
 	}
+}
+
+
+
+
+
+
+// for IE 10+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+   .components__element:first-of-type {
+   	margin-bottom: 38px;
+   }
 }

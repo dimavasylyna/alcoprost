@@ -37,7 +37,7 @@
 	}
 
 .doctor {
-	padding-top: 87px;
+	padding-top: 86px;
 	padding-bottom: 79px;
 	overflow: hidden;
 	
@@ -101,7 +101,8 @@
 		padding-left: 74px;
 		min-width: 372px;
 		padding-right: 12px;
-		min-height: 61px;
+		// min-height: 61px;
+		height: 61px;
 		position: relative;
 		cursor: pointer;
 		border: 2px solid #cccccc;
@@ -266,7 +267,10 @@
 			
 			border-radius: 7px;
 		}
-
+		
+		.doctor__text {
+			max-width: 771px;
+		}
 		h3, h4 {
 			font-size: 20px;
 			line-height: 1.4;
@@ -387,6 +391,12 @@
 			padding-right: 18px;
 		}
 
+		&__item-clinic {
+			.doctor__text {
+				max-width: 586px;
+			}
+		}
+
 
 	}
 
@@ -493,6 +503,10 @@
 
 		&__item-clinic {
 			padding-left: 0;
+
+			.doctor__text {
+				max-width: 506px;
+			}
 
 			.doctor__img {
 				margin-top: 95px;
@@ -739,4 +753,35 @@
 		}
 	}
 
+}
+
+
+
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+   .doctor {
+   		&__tab img {
+   			top: 6px;
+   		}
+   }
+
+
+
+}
+
+
+.doctor .active::before {
+	animation: doctor-active 0.3s 1;
+}
+
+
+@keyframes doctor-active {
+	0% {
+		transform: translateX(-50%) rotate(45deg)  scale(0);
+	}
+ 
+	100% {
+		transform: translateX(-50%) rotate(45deg)  scale(1);
+
+	}
 }

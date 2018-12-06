@@ -124,6 +124,12 @@ $gray: #444;
 
  
 }
+// for IE 10+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+   .btn {
+    padding-top: 9px;
+   }
+}
 
 ::-webkit-input-placeholder { color: #666; font-weight: 400; }
 ::-moz-placeholder          { color: #666; font-weight: 400; } /* Firefox 19+ */
