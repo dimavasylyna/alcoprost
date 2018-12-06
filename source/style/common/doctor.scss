@@ -1,12 +1,15 @@
 
-#ascrail2000 {
+.nicescroll-rails {
 	 
 	  transform: translateX(544px);
 	  left: 50% !important;
 	  z-index: 5 !important;
+	  
 	}
 
-	#ascrail2000::before {
+
+
+	.nicescroll-rails::before {
 	  content: "";
 	  display: block;
 	  position: absolute;
@@ -17,7 +20,7 @@
 	  background-color: #e6e6e6;
 	}
 
-	#ascrail2000 div::before {
+	.nicescroll-rails div::before {
 	  content: "";
 	  display: block;
 	  position: absolute;
@@ -50,6 +53,7 @@
 	.active {
 		border-color: #e8d500;
 		position: relative;
+		color: #000;
 	}
 
 	.active::before {
@@ -103,10 +107,12 @@
 		display: flex;
 		align-items: center;
 		z-index: 10;
+		color: #444;
 	}
 
 	&__tab:hover {
 		border-color: #e8d500;
+		color: #000;
 	}
 	
 	&__tab img {
@@ -133,6 +139,8 @@
 		position: relative;
 		padding-left: 399px;
 	}
+
+
 
 	&__item img {
 		position: absolute;
@@ -163,10 +171,12 @@
 		font-size: 18px;
 		line-height: 1.45;
 		margin-top: 26px;
+		color: #444444;
 	}
 	
 	&__author {
 		margin-top: 26px;
+		width: 88%;
 		
 	}
 
@@ -187,6 +197,196 @@
 	}
 	
 
+// doctor__item-dev
+	&__item-dev {
+		img {
+			left: -86px;
+    		bottom: -104px;
+		}
+	}
+
+
+
+// doctor__item-clinic
+
+	
+	&__item-clinic {
+		padding-left: 0;
+
+		&.show {
+			display: flex;
+		}
+
+		.doctor__img {
+			text-align: center;
+			position: relative;
+			margin-top: 148px;
+			margin-right: 30px;
+
+			
+		}
+		.doctor__img::before {
+			content: '';
+			display: block;
+			position: absolute;
+			height: 193px;
+			width: 251px;
+			background-color: #fff;
+			border-radius: 5px;
+			background-image: url(../img/doctor-item-2-before.png);
+			background-repeat: no-repeat;
+			background-position: 50% 50%;
+			left: 50%;
+			top: 0%;
+			transform: translateX(-50%) translateY(-72%);
+			box-shadow: 0px 5px 24px rgba(227, 227, 226, 0.75);
+
+		}
+
+		.doctor__caption p {
+			font-size: 20px;
+			color: #000;
+			font-weight: 500;
+			line-height: 1.5;
+			font-style: normal;
+		}
+
+		.doctor__caption i {
+			font-size: 18px;
+			color: #444;
+		}
+
+		img {
+			position: static;
+			width: 371px;
+			height: auto;
+			margin-bottom: 20px;
+			
+			border-radius: 7px;
+		}
+
+		h3, h4 {
+			font-size: 20px;
+			line-height: 1.4;
+		}
+
+		h4 {
+			margin-top: 25px;
+		}
+
+		h4:nth-of-type(n+2) {
+			margin-top: 20px;
+		}
+
+		p {
+			font-style: italic;
+			font-size: 18px;
+			line-height: 1.6;
+			margin-top: 8px;
+		}
+
+	}
+
+
+	&__table {
+		display: flex;
+		justify-content: space-between;
+		width: 100%;
+		margin-top: 17px;
+		margin-bottom: 14px;
+
+		p {
+			font-style: normal;
+			margin: 0;
+			font-size: 17px;
+			line-height: 1.53;
+			font-weight: 500;
+		}
+	
+	}
+
+	&__cell {
+		background-color: #f7f8f0;
+		border-radius: 5px;
+		text-align: center;
+		padding: 13px 18px;
+
+	}
+
+	&__table-1 {
+		min-height: 153px;
+		
+
+		.doctor__cell {
+			width: 32.5%;
+		}
+
+		.doctor__cell:nth-of-type(1) b {
+			color: $green;
+		}
+
+		.doctor__cell:nth-of-type(2) b {
+			color: #fda600;
+		}
+
+		.doctor__cell:nth-of-type(3) b {
+			color: #dc4b2f;
+		}
+
+		
+		b {
+			font-size: 61px;
+			line-height: 1.2;
+		}
+	}
+
+	&__table-2 {
+		min-height: 146px;
+		
+		.doctor__cell {
+			width: 24%;
+			padding: 23px 18px;
+			padding-bottom: 10px;
+		}
+
+		b {
+			font-size: 52px;
+			line-height: 1.65;
+			color: $green;
+		}
+
+	}
 
 
 }
+
+
+
+// MEDIA DOCTOR
+
+@media screen and (max-width: 1199px){
+
+	.nicescroll-rails {
+		 
+		  transform: translateX(450px);
+		  left: 50% !important;
+		  z-index: 5 !important;
+		  
+		}
+
+	.doctor {
+		padding-bottom: 60px;
+		padding-top: 60px;
+
+		&__tab {
+			min-width: auto;
+		}
+
+	
+	}
+
+
+
+
+} 
+
