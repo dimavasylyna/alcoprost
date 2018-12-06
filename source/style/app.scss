@@ -96,26 +96,34 @@ $gray: #444;
   outline: 0;
   width: 100%;
   min-height: 65px;
-  
+  position: relative;
+  z-index: 1;
   background: linear-gradient(to right, rgba(232,214,0,1) 0%,rgba(255,204,68,1) 51%,rgba(250,235,13,1) 100%);
   box-shadow: 0px 2px #cca222, 0px 6px #c49a1c, 0 33px 29px -24px rgba(118, 138, 94, 0.76);
   cursor: pointer;
   border-radius: 33px;
   border: 0 solid #f0aa9c;
   line-height: 1;
+  transition: 0.1s;
  
   
   &:hover {
-   
+    background: linear-gradient(to right, rgba(255,240,67,1) 0%,rgba(255,179,17,1) 50%,rgba(255,240,20,1) 100%);
+    box-shadow: 0px 2px #cca222, 0px 6px #c49a1c, 0 33px 29px -24px rgba(118, 138, 94, 0.76);
+    transition: 0.2s;
   }
   &:active {
-   
+   box-shadow: 0px 0px 0px 0px #cca222, 0px 0px #c49a1c, 0 1px 29px -32px rgba(118, 138, 94, 0.76), inset 2px 3px 4px -3px black;
+   transform: translateY(2px);
+   transition: 0.1s all;
   }
   & span {
     font-size: 17px;
     position: relative;
     bottom: 1px;
   }
+
+
  
 }
 

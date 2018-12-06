@@ -97,7 +97,42 @@ $(function() {
 
 
        
+// SLICK 
 
+$(function() {
+    $('.reviews__slider').slick({
+      variableWidth: true,
+      adaptiveHeight: true,
+      infinite: true,
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      responsive: [
+            {
+              breakpoint: 1023,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2,
+                infinite: true,
+               
+              }
+            },
+            {
+              breakpoint: 767,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+              }
+            },
+            {
+              breakpoint: 479,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+              }
+            }
+        ]
+    });
+});
     
 
 
