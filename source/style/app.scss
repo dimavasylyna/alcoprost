@@ -62,10 +62,10 @@ $black: #010101;
 $green: #75ae1b;
 $gray: #444;
 
-/*.text__green {
-  color: #75ae1b;
+.text__green {
+  color: $green;
 }
-
+/*
 .text__gray {
   color: #444;
 }*/
