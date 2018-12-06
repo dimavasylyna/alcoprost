@@ -17,9 +17,7 @@ html, body {
   overflow-x: hidden;
 }
 
-body {
-  min-height: 10000px;
-}
+
 
 h1, h2, h3, h4, h5, h6, p {
   margin: 0;
@@ -149,6 +147,7 @@ $gray: #444;
 @import "common/header-bottom.scss";
 @import "common/footer.scss";
 @import "common/popup.scss";
+
 
 
 @media screen and (max-width: 1199px){

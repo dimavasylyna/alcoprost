@@ -1,0 +1,92 @@
+.footer {
+	padding-top: 132px;
+	padding-bottom: 88px;
+	font-size: 17px;
+	line-height: 1.4;
+
+	a:hover {
+		text-decoration: underline;
+	}
+
+	&__list {
+		align-items: center;
+	}
+
+	&__copyright {
+		text-align: left;
+	}
+
+
+
+	.everad-logo {
+		width: 54px;
+		height: auto;
+		margin-right: 32px;
+	}
+
+	&__privacy {
+		text-align: center;
+	}
+
+	&__requisites {
+		text-align: right;
+	}
+}
+
+
+// MEDIA 
+
+@media screen and (max-width: 1199px){
+ .footer {
+ 	padding-top: 110px;
+ 	padding-bottom: 60px;
+ }
+}
+@media screen and (max-width: 1023px){
+	.footer {
+	 	padding-top: 88px;
+	 	padding-bottom: 40px;
+	 	font-size: 16px;
+
+	 	.everad-logo {
+	 		margin-right: 24px;
+	 	}
+	 }
+
+}
+@media screen and (max-width: 767px){
+
+	.footer {
+	 	padding-top: 30px;
+	 	padding-bottom: 30px;
+
+	 	&__list {
+	 		flex-direction: column;
+
+	 	}
+
+	 	&__copyright {
+	 		flex-direction: column;
+	 		text-align: center;
+	 		margin-bottom: 10px;
+	 	}
+
+	 	.everad-logo {
+	 		margin-right: 0;
+	 		margin-bottom: 10px;
+	 	}
+
+	 	&__requisites {
+			text-align: center;
+			margin-top: 10px;
+		}
+	 }
+ 
+}
+@media screen and (max-width: 479px){
+ .footer {
+	 	padding-top: 25px;
+	 	padding-bottom: 25px;
+	 }
+
+}
