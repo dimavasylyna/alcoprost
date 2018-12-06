@@ -1,0 +1,181 @@
+.how-use {
+  display: block;
+  width: 100%;
+  min-height: 538px;
+  background: center bottom url("../img/addictive-arrow-down.png") no-repeat;
+  &__banner {
+    display: block;
+    margin: 92px auto 48px;
+    text-align: center;
+    color: $black;
+    font-size: 40px;
+    line-height: 42px;
+    font-weight: 900;
+    span {
+      color: $green;
+    }
+  }
+  &__items-container {
+    display: flex;
+    max-width: 858px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+  }
+  &__item-box {
+    display: block;
+  }
+  &__prod {
+    display: block;
+    position: relative;
+    z-index: 2;
+    &:before {
+      display: block;
+      position: absolute;
+      width: 227px;
+      height: 242px;
+      content: "";
+      background: url("../img/usage-after-prod.png") no-repeat;
+      z-index: -1;
+      margin-top: -24px;
+      margin-left: 178px;
+    }
+  }
+  &__items-container .how-use__item-box:first-child {
+    max-width: 385px;
+    padding-top: 52px;
+  }
+  &__items-container .how-use__item-box:nth-child(2) {
+    max-width: 450px;
+    counter-reset: section;
+  }
+  &__usage-step {
+    display: inline-block;
+    width: 458px;
+    min-height: 110px;
+  }
+  &__number-bg {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin-top: 39px;
+    padding-top: 3px;
+    background-color: rgba(232, 214, 0, 0.23);
+    border-radius: 50%;
+    &.-orange-bg {
+      background-color: rgba(253, 166, 0, 0.23);
+    }
+    &.-green-bg {
+      background-color: rgba(231, 244, 211, 0.8);
+    }
+  }
+  &__number {
+    display: block;
+    margin: 4px auto 0;
+    text-align: center;
+    width: 26px;
+    height: 26px;
+    background-color: #e8d600;
+    border-radius: 50%;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 26px;
+    &:before {
+      counter-increment: section;
+      content: counter(section);
+    }
+    &:after {
+      display: block;
+      position: absolute;
+      width: 32px;
+      height: 1px;
+      background-color: #d0d0d0;
+      content: "";
+      margin-top: -14px;
+      margin-left: 26px;
+    }
+    &.-orange {
+      background-color: #fda600;
+    }
+    &.-green {
+      background-color: #75ae1b;
+    }
+  }
+  &__usage-image {
+    display: inline-block;
+    width: 102px;
+    height: 102px;
+    margin-left: 20px;
+    vertical-align: middle;
+    border: 4px solid #f4f4f4;
+    border-radius: 50%;
+    &.-tablet {
+      background: center 21px url("../img/usage-tablet.png") no-repeat;
+    }
+    &.-repeat {
+      background: center 23px url("../img/usage-repeat.png") no-repeat;
+    }
+    &.-calendar {
+      background: center 23px url("../img/usage-calendar.png") no-repeat;
+    }
+  }
+  &__step-description {
+    display: inline-block;
+    width: 245px;
+    margin-left: 28px;
+    padding: 43px 0 44px;
+    vertical-align: middle;
+    color: #000000;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+    border-bottom: 1px solid #dedede;
+    &.-no-border {
+      border-bottom: none;
+    }
+  }
+}
+@media all and (max-width: 1023px) {
+  .how-use {
+    min-height: 770px;
+    &__banner {
+      margin: 50px auto 10px;
+    }
+  }
+}
+@media all and (max-width: 479px) {
+  .how-use {
+    min-height: 729px;
+    &__items-container .how-use__item-box:first-child {
+      max-width: 240px;
+      padding-top: 12px;
+    }
+    &__prod {
+      max-width: 280px;
+      margin: 0 auto;
+      img {
+        width: 100%;
+      }
+      &:before {
+        display: none;
+        //margin-left: 66px;
+      }
+    }
+    &__usage-step {
+      display: block;
+      width: 260px;
+      margin: 0 auto;
+    }
+    &__number-bg {
+      margin-left: 65px;
+    }
+    &__step-description {
+      display: block;
+      margin: 0 auto 10px;
+      padding: 10px 0;
+      text-align: center;
+    }
+  }
+}
