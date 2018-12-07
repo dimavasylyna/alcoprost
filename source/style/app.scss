@@ -15,6 +15,7 @@ html, body {
   line-height: 1.44;
   box-sizing: border-box;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 
@@ -103,6 +104,10 @@ $gray: #444;
   border: 0 solid #f0aa9c;
   line-height: 1;
   transition: 0.1s;
+  max-width: 220px;
+  margin-left: auto;
+  margin-right: auto;
+  
  
   
   &:hover {
@@ -119,6 +124,7 @@ $gray: #444;
     font-size: 17px;
     position: relative;
     bottom: 1px;
+    display: none;
   }
 
 
@@ -127,7 +133,7 @@ $gray: #444;
 // for IE 10+
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
    .btn {
-    padding-top: 9px;
+    padding-top: 19px;
    }
 }
 

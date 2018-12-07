@@ -13,24 +13,30 @@
 	}
 
 	&__copyright {
-		text-align: left;
+		text-align: center;
 	}
-
+	&__details {
+		text-align: center;
+	}
 
 
 	.everad-logo {
 		width: 54px;
 		height: auto;
-		margin-right: 32px;
+		// margin-right: 32px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 6px;
+		display: block;
 	}
 
 	&__privacy {
 		text-align: center;
 	}
 
-	&__requisites {
-		text-align: right;
-	}
+	// &__requisites {
+	// 	text-align: right;
+	// }
 }
 
 
@@ -49,7 +55,7 @@
 	 	font-size: 16px;
 
 	 	.everad-logo {
-	 		margin-right: 24px;
+	 		// margin-right: 24px;
 	 	}
 	 }
 
@@ -72,8 +78,8 @@
 	 	}
 
 	 	.everad-logo {
-	 		margin-right: 0;
-	 		margin-bottom: 10px;
+	 		// margin-right: 0;
+	 		// margin-bottom: 10px;
 	 	}
 
 	 	&__requisites {

@@ -69,9 +69,14 @@
 		border: 2px solid #edebe0; 
 		display: flex;
 		flex-direction: column;
-		justify-content: space-around;
+		justify-content: flex-start;
 		padding: 36px 10px;
+		padding-top: 48px;
 
+	}
+
+	&__element:last-of-type {
+		margin-top: 33px;
 	}
 
 	&__item-2 {
@@ -287,5 +292,9 @@
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
    .components__element:first-of-type {
    	margin-bottom: 38px;
+   }
+
+   .components__body {
+   	height: 600px;
    }
 }

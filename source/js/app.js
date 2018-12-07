@@ -32,9 +32,9 @@ $(function() {
 
     });
 
-    $('.doctor__tab-clinic').on('click', function() {
+    $('.doctor__tab-clinic, .go-to-clinic').on('click', function() {
         delClass();
-        $(this).addClass('active');
+        $('.doctor__tab-clinic').addClass('active');
         $('.doctor__item-clinic').addClass('show');
         $(".scroll-1").getNiceScroll().remove();
         $(".scroll-2").getNiceScroll().remove();
@@ -111,13 +111,13 @@ $(function() {
               breakpoint: 1023,
               settings: {
                 slidesToShow: 2,
-                slidesToScroll: 2,
+                slidesToScroll: 1,
                 infinite: true,
                
               }
             },
             {
-              breakpoint: 767,
+              breakpoint: 768,
               settings: {
                 slidesToShow: 1,
                 slidesToScroll: 1

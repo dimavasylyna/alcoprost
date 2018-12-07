@@ -29,7 +29,12 @@
 	}
 
 	& .price__new {
-		width: 42%;
+		
+		width: auto;
+	}
+
+	& .price__old {
+		width: auto
 	}
 
 	& form {
@@ -78,6 +83,10 @@
 
 		& .price__new {
 			width: 46%;
+			
+		}
+		& .price__old {
+			margin-right: 10px;
 		}
 
 
@@ -170,4 +179,11 @@
 
 
 	}
+}
+
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+   .order-block .form {
+   	padding-top: 42px;
+   }
 }

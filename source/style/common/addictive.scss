@@ -486,4 +486,8 @@
 
 
 
-
+@media all and (max-width: 513px) {
+  .addictive__item:nth-of-type(2) {
+    margin-top: 25px!important;
+  }
+}
