@@ -117,8 +117,8 @@
         content: "";
         background: url("../img/addictive-arrow-type1.png") no-repeat;
         z-index: -1;
-        margin-top: -82px;
-        margin-left: 69px;
+        margin-top: -63px;
+        margin-left: 90px;
       }
       &:after {
         display: block;
@@ -128,8 +128,8 @@
         content: "";
         background: url("../img/addictive-arrow-type2.png") no-repeat;
         z-index: -1;
-        margin-top: 164px;
-        margin-left: 70px;
+        margin-top: 175px;
+        margin-left: 80px;
       }
     }
     &.-mind {
@@ -144,8 +144,8 @@
         content: "";
         background: url("../img/addictive-arrow-type4.png") no-repeat;
         z-index: -1;
-        margin-top: -39px;
-        margin-left: 52px;
+        margin-top: -21px;
+        margin-left: 59px;
       }
       &:after {
         display: block;
@@ -155,8 +155,8 @@
         content: "";
         background: url("../img/addictive-arrow-type3.png") no-repeat;
         z-index: -1;
-        margin-top: 127px;
-        margin-left: -17px;
+        margin-top: 164px;
+        margin-left: 15px;
       }
     }
     &.-health {
@@ -172,8 +172,8 @@
         background: url("../img/addictive-arrow-type2.png") no-repeat;
         z-index: -1;
         transform: rotate(180deg);
-        margin-top: -164px;
-        margin-left: -60px;
+        margin-top: -174px;
+        margin-left: -67px;
       }
       &:after {
         display: block;
@@ -184,8 +184,8 @@
         background: url("../img/addictive-arrow-type1.png") no-repeat;
         z-index: -1;
         transform: rotate(180deg);
-        margin-top: 82px;
-        margin-left: -57px;
+        margin-top: 65px;
+        margin-left: -75px;
       }
     }
 
@@ -215,6 +215,7 @@
   &__bold-text {
     font-weight: 500;
     line-height: 24px;
+    color: $black;
     span {
       white-space: nowrap;
     }
@@ -332,27 +333,28 @@
         background-size: contain;
       }
       &.-toxic:before {
-        margin-top: -69px;
-        margin-left: 108px;
+        margin-top: -58px;
+        margin-left: 68px;
       }
       &.-toxic:after {
         margin-top: 154px;
+        margin-left: 50px;
       }
       &.-mind:before {
         margin-top: -10px;
-        margin-left: 83px;
+        margin-left: 44px;
       }
       &.-mind:after {
-        margin-top: 170px;
-        margin-left: 58px;
+        margin-left: 34px;
+        margin-left: 21px;
       }
       &.-health:before {
         margin-top: -70px;
-        margin-left: 16px;
+        margin-left: 32px;
       }
       &.-health:after {
-        margin-top: 148px;
-        margin-left: -31px;
+        margin-top: 156px;
+        margin-left: -12px;
       }
     }
     &__number-frame {
