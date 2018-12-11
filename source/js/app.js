@@ -32,13 +32,13 @@ $(function() {
 
     });
 
-    $('.doctor__tab-clinic, .go-to-clinic').on('click', function() {
-        delClass();
-        $('.doctor__tab-clinic').addClass('active');
-        $('.doctor__item-clinic').addClass('show');
-        $(".scroll-1").getNiceScroll().remove();
-        $(".scroll-2").getNiceScroll().remove();
-    });
+    // $('.doctor__tab-clinic, .go-to-clinic').on('click', function() {
+    //     delClass();
+    //     $('.doctor__tab-clinic').addClass('active');
+    //     $('.doctor__item-clinic').addClass('show');
+    //     $(".scroll-1").getNiceScroll().remove();
+    //     $(".scroll-2").getNiceScroll().remove();
+    // });
 
     $('.doctor__tab-dev').on('click', function() {
         delClass();

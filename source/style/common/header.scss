@@ -44,6 +44,7 @@
 		font-size: 16px;
 		font-weight: 500;
 		line-height: 1.25;
+		max-width: 200px;
 
 		a {
 			text-decoration: underline;
@@ -83,7 +84,7 @@
 	}
 
 	&__features li:first-of-type {
-		margin-right: 52px;
+		margin-right: 40px;
 		
 	}
 
@@ -473,6 +474,13 @@
 
 
 // MEDIA 
+
+@media screen and (min-width: 2220px){
+	.header {
+		background-position: 0 0;
+	}
+}
+
 @media screen and (max-width: 1268px){
 	.header .form::after {
 		display: none;

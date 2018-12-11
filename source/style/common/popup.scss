@@ -45,7 +45,8 @@
 	}
 
 	.form {
-		min-height: 470px;
+		min-height: 500px;
+		
 
 		&::after {
 			background-image: url(../img/popup-arrow.png);
@@ -57,9 +58,13 @@
     		top: 110px;
 		}
 
+		&__offer {
+			margin-top: 47px;
+		}
+
 		&__secure {
 			padding-top: 0;
-		    margin-top: 38px;
+		    margin-top: 20px;
 		    padding-left: 7px;
 		    background-position: 0 0;
 		    margin-left: 20px;
@@ -68,7 +73,7 @@
 	}
 
 	.price {
-		margin-top: 50px;
+		margin-top: 20px;
 		margin-bottom: 20px;
 	}
 

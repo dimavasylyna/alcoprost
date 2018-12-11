@@ -96,6 +96,14 @@
 		margin-top: 45px;
 	}
 
+	&__tabs {
+		justify-content: space-around;
+		width: 100%;
+		max-width: 800px;
+		margin-right: auto;
+		margin-left: auto;
+	}
+
 	&__tab {
 		
 		padding-left: 74px;
@@ -137,8 +145,18 @@
 			overflow: hidden;
 
 			img {
-				width: 100%;
+				width: 273%;
+				position: absolute;
+				left: -45px;
+				top: -4px;
 				height: auto;
+			}
+
+			.doctor__min {
+				width: 175%;
+				
+				left: -13px;
+   				 top: -1px;
 			}
 		}
 
@@ -219,6 +237,11 @@
 		font-size: 18px;
 		font-weight: 600;
 	}
+
+	&__item img {
+		max-width: 370px;
+		left: 14px;
+	}
 	
 
 // doctor__item-dev
@@ -226,6 +249,7 @@
 		img {
 			left: -86px;
     		bottom: -104px;
+    		max-width: 558px;
 		}
 	}
 
@@ -404,9 +428,9 @@
 		padding-bottom: 60px;
 		padding-top: 60px;
 
-		&__tab {
-			min-width: auto;
-		}
+		// &__tab {
+		// 	min-width: auto;
+		// }
 
 		&__scroll {
 			padding-right: 18px;
@@ -442,26 +466,28 @@
 		}
 
 
-		&__tab {
-			width: 100%;
-			max-width: 242px;
-			margin-top: 6px;
-			padding-left: 12px;
-			padding-top: 29px;
-			padding-bottom: 10px;
-			text-align: center;
-			h3 {
-				font-size: 16px;
-			}
-			span {
-				left: 50%;
-				top: -50%;
-				transform: translateX(-50%) translateY(7%);
-			}
+		// &__tab {
+		// 	width: 100%;
+		// 	max-width: 242px;
+		// 	margin-top: 6px;
+		// 	padding-left: 12px;
+		// 	padding-top: 29px;
+		// 	padding-bottom: 10px;
+		// 	text-align: center;
+		// 	h3 {
+		// 		font-size: 16px;
+		// 	}
+		// 	span {
+		// 		left: 50%;
+		// 		top: -50%;
+		// 		transform: translateX(-50%) translateY(7%);
+		// 	}
 
-		}
+		// }
 		
-	
+		&__tab {
+			min-width: 335px;
+		}
 		
 
 		&__tabs-content {
@@ -503,6 +529,11 @@
 
 		&__exp {
 			font-size: 17px;
+		}
+
+		&__item img {
+			max-width: 222px;
+			left: 26px;
 		}
 
 // doctor__item-dev
@@ -594,7 +625,8 @@
 		}
 
 		&__tab {
-			min-height: 110px;
+			min-height: 80px;
+			min-width: auto;
 			padding-top: 16px;
 			span {
 				left: 50%;
@@ -602,6 +634,24 @@
 				transform: translateX(-50%) translateY(50%);
 			}
 		}
+
+		&__tab {
+			width: 100%;
+			max-width: 242px;
+			margin-top: 6px;
+			padding-left: 12px;
+			padding-top: 29px;
+			padding-bottom: 10px;
+			text-align: center;
+			h3 {
+				font-size: 16px;
+			}
+			
+
+		}
+
+
+
 		&__item {
 			padding-left: 0;
 		}
@@ -699,10 +749,15 @@
 			flex-wrap: wrap;
 		}
 		&__tab {
-			max-width: 148px;
+			max-width: 200px;
 			z-index: 10;
-			padding: 2px;
+			padding: 2px 8px;
 			min-height: 100px;
+			max-width: 200px;
+		   
+		    text-align: center;
+		    min-height: 85px;
+		    padding-top: 18px;
 		}
 
 		&__tab h3 {

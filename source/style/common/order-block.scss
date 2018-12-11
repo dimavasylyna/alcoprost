@@ -7,7 +7,7 @@
 		width: 100%;
 		padding-left: 60px;
 		padding-right: 54px;
-		flex-wrap: wrap;
+		flex-wrap: nowrap;
 	}
 
 	& .form::before,
@@ -118,6 +118,7 @@
 
 		& .form {
 			justify-content: center;
+			flex-wrap: wrap;
 		}
 
 		& .price {

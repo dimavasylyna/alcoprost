@@ -208,15 +208,21 @@
 			width: 100%;
 			padding-bottom: 14px;
 			padding-top: 14px;
+			justify-content: space-around;
 		}
 
 		&__element {
 			width: 45%;
 		}
+
+		&__element:last-of-type {
+			margin-top: 0;
+		}
+
 		&__img {
 			width: 60%;
 		}
-
+		
 		&__before-1::before,
 		&__before-2::before,
 		&__before-3::before {
@@ -296,5 +302,15 @@
 
    .components__body {
    	height: 600px;
+   }
+}
+
+@media screen and (max-width: 767px) and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+	.components__body {
+   		height: auto;
+   }
+
+   .components__element:first-of-type {
+   	margin-bottom: 0px;
    }
 }
