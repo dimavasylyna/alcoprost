@@ -29,6 +29,8 @@
 			font-size: 28px;
 			text-align: center;
 			padding-top: 4px;
+			font-family: Roboto, sans-serif!important;
+			font-weight: 900;
 			box-sizing: border-box;
 			right: -50%;
 			top: 26%;
@@ -92,6 +94,9 @@
 		}
 		&__item:nth-of-type(2)::after {
 			right: -36%;
+		}
+		&__img {
+			margin-bottom: 20px;
 		}
 	}
 	

@@ -155,7 +155,15 @@
 	.components {
 		padding-bottom: 60px;
 		padding-top: 60px;
+
+		&__list {
+			margin-top: 30px;
+		}
+		&__head {
+			margin-bottom: 20px;
+		}
 	}
+
 }
 
 

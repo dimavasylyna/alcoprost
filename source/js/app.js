@@ -1,6 +1,10 @@
-// Doctor - tabs
+
+
+
 
 $(function() {
+
+// Doctor - tabs
     
     var docItem = $('.doctor__item');
     var docTab = $('.doctor__tab');
@@ -60,6 +64,24 @@ $(function() {
 
         });
     });
+
+
+
+
+    // Smooth scroll
+
+    $(document).ready(function(){
+
+  $(".header__features").on("click","a", function (event) {
+      event.preventDefault();
+      var id  = $(this).attr('href'),
+          top = $(id).offset().top;
+      $('body,html').animate({scrollTop: top}, 1500);
+
+  });
+
+});
+
 });
 
 
