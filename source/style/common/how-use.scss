@@ -1,7 +1,8 @@
 .how-use {
   display: block;
   width: 100%;
-  min-height: 538px;
+  // min-height: 538px;
+  padding-bottom: 100px;
   background: center bottom url("../img/addictive-arrow-down.png") no-repeat;
   &__banner {
     display: block;
@@ -137,9 +138,20 @@
     }
   }
 }
+@media all and (max-width: 1199px) {
+  .how-use {
+    padding-bottom: 66px;
+    &__banner {
+      margin-top: 51px;
+      margin-bottom: 25px;
+    }
+  }
+}
+
 @media all and (max-width: 1023px) {
   .how-use {
-    min-height: 770px;
+    // min-height: 770px;
+    padding-bottom: 40px;
     &__banner {
       margin: 50px auto 10px;
     }
@@ -147,7 +159,8 @@
 }
 @media all and (max-width: 479px) {
   .how-use {
-    min-height: 729px;
+    // min-height: 729px;
+    padding-bottom: 5px;
     &__items-container .how-use__item-box:first-child {
       max-width: 240px;
       padding-top: 12px;

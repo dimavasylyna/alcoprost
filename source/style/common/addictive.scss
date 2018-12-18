@@ -313,6 +313,13 @@
     background-size: cover;
     &__advices-container {
       justify-content: space-around;
+      padding-bottom: 60px;
+    }
+    &__banner {
+      padding-top: 50px;
+    }
+     &__items-container {
+      margin-bottom: 35px;
     }
     &__advices-container .addictive__advice:first-child,
     &__advices-container .addictive__advice:nth-child(2),
@@ -360,6 +367,7 @@
     &__number-frame {
       margin-bottom: 0;
     }
+
   }
 }
 
@@ -371,9 +379,13 @@
     }
     &__statistic {
       padding: 15px 0;
+      font-size: 20px;
     }
     &__items-container {
       margin-bottom: 40px;
+    }
+    &__item-description {
+      line-height: 23px;
     }
     &__item {
       margin: 0 auto;

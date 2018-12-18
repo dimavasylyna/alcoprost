@@ -148,7 +148,7 @@
 	}
 
 	&__man {
-	    top: -54px;
+	    top: -43px;
     	left: 13px;
 	}
 
@@ -505,7 +505,11 @@
 }
 
 @media screen and (max-width: 1199px){
+	section.header {
+		padding-top: 10px;
+	}
 	.header {
+
 		
 
 		.logo {
@@ -561,7 +565,7 @@
 
 		&__man {
 			left: -64px;
-			top: 7px;
+			top: 17px;
 			max-width: 366px;
 		}
 
