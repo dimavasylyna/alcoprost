@@ -503,3 +503,17 @@
     margin-top: 25px!important;
   }
 }
+
+@media all and (max-width: 479px) {
+ 
+     .addictive__advices-container .addictive__advice:first-child:before, 
+     .addictive__advices-container .addictive__advice:nth-child(2):before, 
+     .addictive__advices-container .addictive__advice:nth-child(3):before {
+      width: 40px;
+      height: 40px;
+      font-size: 30px;
+      line-height: 42px;
+      margin-bottom: 0;
+    }
+  
+}

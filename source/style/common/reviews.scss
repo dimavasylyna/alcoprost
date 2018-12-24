@@ -113,6 +113,9 @@
 		.container {
 			max-width: 970px;
 		}
+		.title {
+			width: auto;
+		}
 
 		&__item {
 			width: 300px;
@@ -169,6 +172,8 @@
 		padding-bottom: 40px;
 		padding-top: 40px;
 
+		
+
 		&__slider {
 			width: 90%;
 			margin-left: auto;
@@ -212,6 +217,9 @@
 	.reviews {
 		padding-bottom: 25px;
 		padding-top: 25px;
+		.title {
+			margin-bottom: 0;
+		}
 
 		&__slider {
 			max-width: 260px;

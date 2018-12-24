@@ -191,7 +191,16 @@
 	}
 }
 
-
+@media screen and (max-width: 615px){
+	.order-block {
+		.form {
+			max-width: 380px;
+			width: 100%;
+			margin-left: auto;
+			margin-right: auto;
+		}
+	}
+}
 
 
 @media screen and (max-width: 479px){

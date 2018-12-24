@@ -291,13 +291,19 @@
 		&__tai::before {
 			right: 14px;
 		}
-
+		
+		&__text {
+			margin-top: 28px;
+			&::before {
+				top: -10px;
+			}
+		}
 		&__text h3 {
 			font-size: 18px;
 		}
 
 		&__text p {
-			margin-top: 18px;
+			margin-top: 8px;
 		}
 	}
 }
